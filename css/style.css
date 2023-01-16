@@ -1,0 +1,685 @@
+/* --------------- Font Style ---------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+
+/* ----------------------Some Common Style Here--------------------- */
+:root {
+    --dark-1: #131313;
+    --dark-2: #424242;
+    --dark-3: #727272;
+    --white-color: #ffffff;
+    --primary-color: #FF900E;
+    --secondary-color: #FFF4E7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.container {
+    max-width: 1920px;
+    width: 100%;
+    padding: 0px 240px;
+    margin: 0px auto;
+}
+
+.flex--container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gird--container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.primary--color {
+    color: var(--primary-color);
+}
+
+.dark--1 {
+    color: var(--dark-1);
+}
+
+.dark--2 {
+    color: var(--dark-2);
+}
+
+.dark--3 {
+    color: var(--dark-3);
+}
+
+.section__title {
+    border-left: 5px solid var(--primary-color);
+    padding-left: 20px;
+    padding-right: 100px;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+.section__title--primary {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.section__title--secondary {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.section--details {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 20px 25px;
+    font-size: 1.5rem;
+    border: 0;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    transition: all .3s;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    box-shadow: 10px 20px 20px #bdbdbd;
+
+}
+
+/* -------------------- Header Section Style ------------------ */
+.header__container {
+    padding-top: 50px;
+    background-color: #FF900E1A;
+}
+
+.menu>ul>li {}
+
+.menu>ul>li a {
+    padding: 15px 20px;
+    margin-left: 5px;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+.menu>ul>li a:hover {
+    padding: 15px 20px;
+    background-color: var(--primary-color);
+    margin-left: 5px;
+    text-decoration: none;
+    color: var(--white-color);
+    border-radius: 10px;
+}
+
+.hero__section {
+    padding: 115px 500px 30px;
+    text-align: center;
+}
+
+.hero_banner {
+    padding: 50px 240px;
+}
+
+.hero_banner img {
+    width: 100%;
+}
+
+/* ---------------- About Us Section------------------- */
+.about__us__container {
+    justify-content: space-between;
+    margin: 100px auto;
+}
+
+.about__us__img {
+    flex-basis: 49%;
+}
+
+.about__us__details {
+    flex-basis: 49%;
+    padding: 0px 120px 0px 50px;
+}
+
+.about__us__title {
+    font-size: 2.7rem;
+    font-weight: 500;
+}
+
+.about__us__details>p {
+    margin: 20px 0;
+}
+
+.about__btn {
+    text-align: left;
+    margin: 20px 0px;
+}
+
+/* --------------Features Section Style ------------------ */
+.feature__container {
+    position: relative;
+}
+
+.feature__details {
+    flex-basis: 40%;
+}
+
+.feature__img {
+    flex-basis: 50%;
+}
+
+.feature__details>ul {}
+
+.feature__details>ul li {
+    border-radius: 10px;
+    box-shadow: 0px 7px 5px #d3d3d352;
+    padding: 30px;
+    margin: 10px 0;
+}
+
+.feature__details>ul li h4 {
+    margin: 20px 0;
+}
+
+.feature__details>ul li p {
+    margin-top: 20px;
+    line-height: 28px;
+}
+
+.large__btn {
+    position: absolute;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: 4rem;
+    text-align: center;
+    padding: 2.8rem 1.5rem;
+    border-radius: 10px;
+    left: 50%;
+    transform: translate(-30%, -150px);
+}
+
+.large__btn>h2 {
+    line-height: 3rem;
+}
+
+.large__btn span {
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+/* -------------------- Our Achievement Section Style-------------------- */
+.achievement__container {
+    margin-top: 150px;
+}
+
+.our__goals {
+    justify-content: space-between;
+    text-align: center;
+    margin: 100px;
+}
+
+.goals__item {
+    padding: 50px;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.goals__item:hover {
+    transform: translateY(-50px);
+    box-shadow: 10px 20px 20px #bdbdbd;
+}
+
+.goals__item h3 {
+    font-size: 2.8rem;
+}
+
+.goals__item p {
+    font-size: 1.3rem;
+}
+
+/* ------------------------- Sponsors Section Style-------------------------- */
+.our__sponsor__Seciton {
+    text-align: center;
+}
+
+.our__sponsor__Section h3 {
+    font-size: 40px;
+    margin: 0px 0px 30px;
+    text-align: center;
+    border: 0;
+}
+
+.sponsore {
+    margin: 80px 0;
+}
+
+.sponsore img {
+    filter: grayscale(1);
+    padding: 50px 3rem;
+}
+
+/* --------------------------- Footer section Style----------------------- */
+.footer__container {
+    background-color: #FF900E1A;
+    text-align: center;
+}
+
+.contact__us__form {
+    padding-top: 50px;
+}
+
+.contact__us__form label,
+input {
+    padding: 15px;
+    font-size: 20px;
+    border: 0;
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+.contact__us__form input[type="submit"] {
+    width: 30%;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    color: var(--white-color);
+}
+
+table {
+    margin: 0px auto;
+    width: 100%;
+
+}
+
+.copy__right__container {
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+
+.footer__container .copy__right {
+    padding: 20px;
+    font-size: 1.3rem;
+}
+
+.social {
+    padding: 1rem;
+}
+
+.social a {
+    font-size: 1.5rem;
+    padding: 0.8rem 1rem;
+    color: var(--dark-3);
+    transition: all 0.3s;
+}
+
+.social a:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+/* ---------------------- For Mobile Version 576px -------------------------*/
+@media only screen and (max-width: 576px) {
+    .container {
+        padding: 20px;
+    }
+    .header__container {
+        padding-top: 0px;
+    }
+    .flex--container {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .gird--container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
+
+    .section__title--primary {
+        font-size: 25px;
+        margin-bottom: 20px;
+
+    }
+    .logo h3{
+        font-size: 30px;
+    }
+    .btn-primary {
+        padding: 15px 20px;
+        font-size: 1rem;
+    }
+    .menu {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .menu ul li {
+        width: 100%;
+        border-top: 1px solid rgb(214, 214, 214);
+        border-bottom: 1px solid rgb(214, 214, 214);
+    }
+
+    .menu>ul>li a {
+        display: block;
+    }
+
+    .menu>ul>li a:hover {
+        transform: translateX(50px);
+    }
+
+    .hero__section {
+        padding: 0px 30px 30px;
+    }
+
+    .about__us__container {
+        margin: 0px;
+    }
+
+    .about__us__details {
+        padding: 30px;
+    }
+
+    .about__us__title {
+        font-size: 2rem;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .about__us__details>p {
+        text-align: center;
+    }
+
+    .about__btn {
+        text-align: center;
+        margin: 0px auto;
+    }
+
+    .feature__details>ul li {
+        padding: 10px 20px;
+        margin: 0px;
+    }
+
+    .feature__img img {
+        width: 100%;
+    }
+
+    .large__btn {
+        position: relative;
+        font-size: 1rem;
+        left: 0;
+        transform: translate(0, 0);
+        width: 150px;
+        margin: 10px auto;
+        padding: 20px;
+    }
+
+    .large__btn>h2 {
+        line-height: 20px;
+    }
+
+    .large__btn span {
+        font-size: 1rem;
+    }
+
+    .achievement__container {
+        margin-top: 0px;
+    }
+
+    .our__goals {
+        justify-content: space-between;
+        text-align: center;
+        margin: 20px;
+    }
+    .goals__item {
+        padding: 30px;
+        width: 60%;
+    }
+    .goals__item h3 {
+        font-size: 1.5rem;
+    }
+    .goals__item p {
+        font-size: 0.8rem;
+    }
+    .goals__item:hover {
+    transform: translateX(50px);
+}
+    .our__sponsor__Section h3 {
+        margin: 10px 0;
+        text-align: center;
+        border: 0;
+    }
+
+    .sponsore {
+        margin: 0px;
+    }
+
+    .sponsore img {
+        filter: grayscale(0);
+        padding: 20px;
+        width: 50%;
+    }
+
+    .contact__us__form {
+        padding: 0;
+    }
+
+    .copy__right__container {
+        gap: 10px;
+        padding: 10px;
+    }
+
+
+    .contact__us__form label,
+    input {
+        padding: 10px;
+        font-size: 14px;
+        border-radius: 10px;
+        width: 60%;
+        margin-bottom: 10px;
+    }
+
+    .contact__us__form label {
+        display: none;
+    }
+
+    .footer__container .copy__right {
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
+/* ______________ For Tablet 768 px ___________________________ */
+@media only screen and (min-width:577px) and (max-width:768px) {
+    .container {
+        padding: 30px;
+    }
+    .header__container {
+        padding-top: 0px;
+    }
+    .flex--container {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .gird--container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
+
+    .section__title--primary {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+
+    }
+    .section__title {
+        font-size: 40px;
+        text-align: left;
+    }
+    .logo h3{
+        font-size: 30px;
+    }
+    .btn-primary {
+        padding: 15px 20px;
+        font-size: 1rem;
+    }
+    .menu {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .menu ul li {
+        width: 100%;
+        border-top: 1px solid rgb(214, 214, 214);
+        border-bottom: 1px solid rgb(214, 214, 214);
+    }
+
+    .menu>ul>li a {
+        display: block;
+    }
+
+    .menu>ul>li a:hover {
+        transform: translateX(50px);
+    }
+
+    .hero__section {
+        padding: 0px 30px 30px;
+    }
+
+    .about__us__container {
+        margin: 0px;
+    }
+
+    .about__us__details {
+        padding: 30px;
+    }
+
+    .about__us__title {
+        font-size: 2rem;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .about__us__details>p {
+        text-align: center;
+    }
+
+    .about__btn {
+        text-align: center;
+        margin: 0px auto;
+    }
+
+    .feature__details>ul li {
+        padding: 10px 20px;
+        margin: 0px;
+    }
+
+    .feature__img img {
+        width: 100%;
+    }
+
+    .large__btn {
+        position: relative;
+        font-size: 1rem;
+        left: 0;
+        transform: translate(0, 0);
+        width: 150px;
+        margin: 10px auto;
+        padding: 20px;
+    }
+
+    .large__btn>h2 {
+        line-height: 20px;
+    }
+
+    .large__btn span {
+        font-size: 1rem;
+    }
+
+    .achievement__container {
+        margin-top: 0px;
+    }
+
+    .our__goals {
+        justify-content: space-between;
+        text-align: center;
+        margin: 20px;
+    }
+    .goals__item {
+        padding: 30px;
+        width: 60%;
+    }
+    .goals__item h3 {
+        font-size: 1.5rem;
+    }
+    .goals__item p {
+        font-size: 0.8rem;
+    }
+    .goals__item:hover {
+    transform: translateX(50px);
+}
+    .our__sponsor__Section h3 {
+        margin: 10px 0;
+        text-align: center;
+        border: 0;
+    }
+
+    .sponsore {
+        margin: 0px;
+    }
+
+    .sponsore img {
+        filter: grayscale(0);
+        padding: 20px;
+        width: 30%;
+    }
+
+    .contact__us__form {
+        padding: 0;
+    }
+
+    .copy__right__container {
+        gap: 10px;
+        padding: 10px;
+    }
+
+
+    .contact__us__form label,
+    input {
+        padding: 10px;
+        font-size: 14px;
+        border-radius: 10px;
+        width: 60%;
+        margin-bottom: 10px;
+    }
+
+    .contact__us__form label {
+        display: none;
+    }
+
+    .footer__container .copy__right {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+}
